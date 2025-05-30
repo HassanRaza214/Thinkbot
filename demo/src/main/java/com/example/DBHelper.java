@@ -8,8 +8,8 @@ import org.json.JSONObject;
 
 public class DBHelper {
 
-    private static final String API_KEY = "QLe52EYIyUQ3Y95YScGyh7cMMWLUx2LOLK4iKsww";
-    private static final String API_URL = "https://api.cohere.com/v2/generate";
+    private static final String API_KEY = "Enter API key here";
+    private static final String API_URL = "Enter your API URL here";
     private Connection connection;
 
     public DBHelper() {
@@ -21,8 +21,8 @@ public class DBHelper {
             String url = "jdbc:sqlserver://localhost:1433;databaseName=chatbot_db;encrypt=true;trustServerCertificate=true";
             
             // SQL Server credentials (escaped backslash in username)
-            String user = "sa"; // Domain or machine name + SQL login
-            String password = "hassan428826";     // Replace with your actual password
+            String user = " Domain or machine name + SQL login"; 
+            String password = "Replace with your actual password"; 
     
             // Establish connection
             connection = DriverManager.getConnection(url, user, password);
